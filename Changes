@@ -1,4 +1,6 @@
 Revision history for Test-Docker-MySQL
 
 {{$NEXT}}
+
+0.01  2014-07-10 00:26:01 JST
         - Initial release
