@@ -185,6 +185,10 @@ You can find the binary at L<https://github.com/boot2docker/osx-installer/releas
     done
     $ boot2docker up
 
+=item Pull docker images for this module
+
+    $ docker pull punytan/p5-test-docker-mysql
+
 =back
 
 =head1 CHEATSHEET
