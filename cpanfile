@@ -1,4 +1,4 @@
-requires 'perl', '5.012000';
+requires 'perl', '5.008000';
 
 requires 'DBI',         '1.631';
 requires 'DBD::mysql',  '4.027';

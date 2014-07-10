@@ -16,9 +16,12 @@ sub WARN {
 sub new {
     my ($class, %args) = @_;
 
+    my $tag   = delete $args{tag};
+    my $ports = delete $args{ports};
+
     bless {
-        tag           => $args{tag}   // 'punytan/p5-test-docker-mysql',
-        ports         => $args{ports} // [ 55500 .. 55555 ],
+        tag           => defined $tag   ? $tag   : 'punytan/p5-test-docker-mysql',
+        ports         => defined $ports ? $ports : [ 55500 .. 55555 ],
         container_ids => [],
     }, $class;
 }
