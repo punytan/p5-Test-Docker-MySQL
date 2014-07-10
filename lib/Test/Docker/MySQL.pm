@@ -2,7 +2,7 @@ package Test::Docker::MySQL;
 # ABSTRACT: Test::Docker::MySQL is a module to launch MySQL in docker containers.
 use strict;
 use constant DEBUG => $ENV{DEBUG_TEST_DOCKER_MYSQL};
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 use DBI;
 use IPC::Run ();
 use Time::HiRes 'sleep';

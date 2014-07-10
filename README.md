@@ -11,8 +11,8 @@ Test::Docker::MySQL is a module to launch MySQL in docker containers.
     use Test::Docker::MySQL;
     my $dm_guard = Test::Docker::MySQL->new;
 
-    my $port_1 = $guard->get_port; # get a mysql container port
-    my $port_2 = $guard->get_port; # get another mysql container port
+    my $port_1 = $dm_guard->get_port; # get a mysql container port
+    my $port_2 = $dm_guard->get_port; # get another mysql container port
 
     my $dsn_1 = "dbi:mysql:database=mysql;host=127.0.0.1;port=$port_1";
     my $dbh_1 = DBI->connect($dsn , 'root', '', { RaiseError => 1 });
@@ -38,7 +38,7 @@ All parameters are optional.
 
 - `ports`
 
-    Specify port range by `ports`>. Default value is `[ 55500 .. 55555 ]`,
+    Specify port range by `ports`. Default value is `[ 55500 .. 55555 ]`,
 
 ## `get_port`
 
